@@ -34,7 +34,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #474848; }
+  color: #ececec;
+}
 
 .question {
   margin-top: -5em;
