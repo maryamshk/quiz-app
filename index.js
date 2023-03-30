@@ -84,15 +84,15 @@ opt.forEach((option) => {
         }
         let selectedAnswer = option.textContent;
         if (selectedAnswer === answers[x - 1]) {
-            option.parentElement.style.backgroundColor = "rgba(0, 255, 0, 0.4)";
+            option.parentElement.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
             s++;
             let scorekeep=s+"/5";
             score.textContent=scorekeep;
         } else {
-            option.parentElement.style.backgroundColor = "rgba(255, 0, 0, 0.4)";
+            option.parentElement.style.backgroundColor = "rgba(255, 0, 0, 0.5)";
             let correctOptionIndex = item[x - 1].options.findIndex(option => option === answers[x - 1]);
             setTimeout(() => {
-                alloption[correctOptionIndex].parentElement.style.backgroundColor = "rgba(0, 255, 0, 0.4)";
+                alloption[correctOptionIndex].parentElement.style.backgroundColor = "rgba(0, 255, 0, 0.5)";
             }, 100);
         }
         button.disabled = false;
